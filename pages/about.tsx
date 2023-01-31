@@ -71,7 +71,7 @@ export default function About() {
           <ol className="relative border-l border-gray-200 dark:border-gray-600">
             <TimeBox
               text=""
-              linkText="Collage - Manipal University Jaipur"
+              linkText="College - Manipal University Jaipur"
               link="https://jaipur.manipal.edu/"
               timestamp="2024"
             />

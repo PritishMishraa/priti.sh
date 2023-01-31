@@ -17,7 +17,7 @@ export default function Timeline() {
                 timestamp="Jan 2021"
             />
             <TimeBoxComment
-                text="Joined collage "
+                text="Joined college "
                 linkText="Manipal University Jaipur"
                 link="https://jaipur.manipal.edu/"
                 description="I was both nervous and excited. Started in online mode and then finally went to campus after 6 months."
