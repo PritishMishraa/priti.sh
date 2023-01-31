@@ -56,7 +56,7 @@ export default function Footer() {
           </Link>
         </div>
       </div>
-      <div className="flex w-full p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-gray-800 dark:text-red-400" role="alert">
+      {/* <div className="flex w-full p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-gray-800 dark:text-red-400" role="alert">
         <svg
           aria-hidden="true"
           className="flex-shrink-0 inline w-5 h-5 mr-3"
@@ -69,7 +69,7 @@ export default function Footer() {
         <div>
           <span className="font-semibold">COPY alert!</span> The entire design of this website is taken from <a href='https://leerob.io/' target="_blank" rel="noreferrer noopener" className='font-semibold'>Lee Robinson&apos;s</a> website.
         </div>
-      </div>
+      </div> */}
     </footer>
   );
 }
