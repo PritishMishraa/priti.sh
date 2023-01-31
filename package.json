@@ -11,7 +11,7 @@
     "@next/font": "13.0.2",
     "classnames": "^2.3.2",
     "countapi-js": "^1.0.2",
-    "next": "13.0.2",
+    "next": "13.1.6",
     "next-themes": "^0.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -23,6 +23,7 @@
     "use-delayed-render": "^0.0.7"
   },
   "devDependencies": {
+    "@types/node": "18.11.18",
     "@types/react": "^18.0.24",
     "autoprefixer": "10.4.13",
     "eslint": "8.26.0",
