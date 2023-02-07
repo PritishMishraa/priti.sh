@@ -16,12 +16,12 @@ export default function Projects() {
                 </p>
                 <div className="flex flex-col w-full gap-8">
                     <ProjectCard
-                        title="CodeTask"
+                        title="Code Task"
                         description="A platform that integrates LeetCode and Todoist using APIs and makes it easy for the user to keep track of his coding practice."
                         gradient="from-[#ff0f7b] to-[#f89b29]"
                         tech={["PlanetScaleDB", "Prisma", "NextJS", "API"]}
-                        githubLink="https://github.com/PritishMishraa/CodeTask"
-                        hostedLink="https://codetask.vercel.app/"
+                        githubLink="https://github.com/PritishMishraa/code-task"
+                        hostedLink="https://code-taskk.vercel.app/"
                         isMigrating={false}
                     />
                     <ProjectCard

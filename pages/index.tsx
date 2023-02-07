@@ -23,7 +23,7 @@ export default function Home() {
               </div>
               <div className="mb-16 text-gray-600 dark:text-gray-400">
                 Learning new technologies and creating products. Currently working on&nbsp;
-                <a href="https://codetask.vercel.app/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">CodeTask</a>.
+                <a href="https://code-taskk.vercel.app/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">Code Task</a>.
               </div>
             </div>
             <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto">
@@ -44,12 +44,12 @@ export default function Home() {
           </h3>
           <div className="flex flex-col w-full gap-6">
             <ProjectCard
-              title="CodeTask"
+              title="Code Task"
               description="A platform that integrates LeetCode and Todoist using APIs and makes it easy for the user to keep track of his coding practice."
               gradient="from-[#ff0f7b] to-[#f89b29]"
               tech={["Javascript", "Tailwind", "NextJS", "API"]}
-              githubLink="https://github.com/PritishMishraa/CodeTask"
-              hostedLink="https://codetask.vercel.app/"
+              githubLink="https://github.com/PritishMishraa/code-task"
+              hostedLink="https://code-taskk.vercel.app/"
               isMigrating={false}
             />
             <ProjectCard
