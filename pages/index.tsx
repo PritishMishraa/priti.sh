@@ -23,7 +23,7 @@ export default function Home() {
               </div>
               <div className="mb-16 text-gray-600 dark:text-gray-400">
                 Learning new technologies and creating products. Currently working on&nbsp;
-                <a href="https://code-taskk.vercel.app/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">Code Task</a>.
+                <a href="https://codetask.vercel.app/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">Code Task</a>.
               </div>
             </div>
             <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto">
