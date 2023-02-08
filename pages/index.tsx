@@ -47,9 +47,9 @@ export default function Home() {
               title="Code Task"
               description="A platform that integrates LeetCode and Todoist using APIs and makes it easy for the user to keep track of his coding practice."
               gradient="from-[#ff0f7b] to-[#f89b29]"
-              tech={["Javascript", "Tailwind", "NextJS", "API"]}
+              tech={["TypeScript", "NextJS", "NextAuth", "Prisma", "TailwindCSS"]}
               githubLink="https://github.com/PritishMishraa/code-task"
-              hostedLink="https://code-taskk.vercel.app/"
+              hostedLink="https://codetask.vercel.app/"
               isMigrating={false}
             />
             <ProjectCard
