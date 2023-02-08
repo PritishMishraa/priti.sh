@@ -42,12 +42,9 @@ export default function Footer() {
           </ExternalLink>
         </div>
         <div className="flex flex-col space-y-4">
-          <Link
-            href="/dashboard"
-            className="text-gray-500 transition hover:text-gray-600 hover:dark:text-gray-400"
-          >
-            Dashboard
-          </Link>
+          <ExternalLink href="https://flowcv.com/resume/385druucnq">
+            Resume
+          </ExternalLink>
           <Link
             href="/tbr"
             className="text-gray-500 transition hover:text-gray-600"
