@@ -1,5 +1,18 @@
 [
     {
+        "title": "priti.sh",
+        "description": "My personal website ✨. It is a static website built using NextJS and TailwindCSS. It is hosted on Vercel.",
+        "gradient": "from-[#239eab] to-[#74deee]",
+        "tech": [
+            "TypeScript",
+            "NextJS",
+            "TailwindCSS"
+        ],
+        "githubLink": "https://github.com/PritishMishraa/priti.sh",
+        "hostedLink": "https://priti-sh.vercel.app/",
+        "isMigrating": false
+    },
+    {
         "title": "Code Task",
         "description": "A platform that integrates LeetCode and Todoist using APIs and makes it easy for the user to keep track of his coding practice.",
         "gradient": "from-[#ff0f7b] to-[#f89b29]",
