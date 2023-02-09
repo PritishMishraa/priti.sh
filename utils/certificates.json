@@ -1,0 +1,12 @@
+[
+    {
+        "index": "01",
+        "title": "Meta Front-End Developer Professional Certificate",
+        "isCompleted": false
+    },
+    {
+        "index": "02",
+        "title": "Server-side Development with NodeJS, Express and MongoDB",
+        "isCompleted": false
+    }
+]

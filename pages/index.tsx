@@ -6,6 +6,7 @@ import Typing from 'components/Typing';
 import Timeline from 'components/Timeline';
 import Container from 'components/Container';
 import ProjectCard from 'components/ProjectCard';
+import certificates from '../utils/certificates.json';
 import CertificateCard from 'components/CertificateCard';
 
 export default function Home() {
@@ -98,14 +99,16 @@ export default function Home() {
           <p className="mb-6 text-gray-600 dark:text-gray-400">
             Proof that I am legit.
           </p>
-          <CertificateCard
-            index="01"
-            title="Meta Front-End Developer Professional Certificate"
-            isCompleted={false} />
-          <CertificateCard
-            index="02"
-            title="Server-side Development with NodeJS, Express and MongoDB"
-            isCompleted={false} />
+          {
+            certificates.map((certificate) => {
+              return <CertificateCard
+                key={certificate.index}
+                index={certificate.index}
+                title={certificate.title}
+                isCompleted={certificate.isCompleted}
+              />
+            })
+          }
         </div>
       </Container>
     </Suspense>
