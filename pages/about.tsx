@@ -90,20 +90,24 @@ export default function About() {
           </ol>
           <h2 className='mb-6 text-3xl font-bold'>Headshots</h2>
           <div className="flex space-x-8">
-            <Image
-              alt="Pritish headshot"
-              width={400}
-              quality={100}
-              src={avatar}
-              className="rounded-md"
-            />
-            <Image
-              alt="Pritish headshot"
-              width={400}
-              quality={100}
-              src={avatar}
-              className="rounded-md grayscale"
-            />
+            <div>
+              <Image
+                alt="Pritish headshot"
+                width={400}
+                quality={100}
+                src={avatar}
+                className="rounded-md"
+              />
+            </div>
+            <div>
+              <Image
+                alt="Pritish headshot"
+                width={400}
+                quality={100}
+                src={avatar}
+                className="rounded-md grayscale"
+              />
+            </div>
           </div>
         </div>
       </div>
