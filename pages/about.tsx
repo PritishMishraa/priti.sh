@@ -16,7 +16,7 @@ export default function About() {
           <h2 className='mb-6 text-3xl font-bold'>Links</h2>
           <div className='flex justify-around w-full mb-10'>
             <div>
-              <a href="https://www.linkedin.com/in/pritish-mishra-3118621bb/">
+              <a href="https://www.linkedin.com/in/pritish-mishra-3118621bb/" target="_blank" rel="noopener noreferrer">
                 <svg
                   className='w-8 h-8'
                   role="img"
@@ -29,7 +29,7 @@ export default function About() {
               </a>
             </div>
             <div>
-              <a href="https://github.com/PritishMishraa">
+              <a href="https://github.com/PritishMishraa" target="_blank" rel="noopener noreferrer">
                 <svg
                   className='w-8 h-8'
                   role="img"
@@ -42,7 +42,7 @@ export default function About() {
               </a>
             </div>
             <div>
-              <Link href="">
+              <Link href="/">
                 <svg
                   className='w-8 h-8'
                   role="img"
@@ -54,7 +54,7 @@ export default function About() {
               </Link>
             </div>
             <div className='hover:text-[#1DA1F2]'>
-              <a href="https://twitter.com/PritishhMishraa">
+              <a href="https://twitter.com/PritishhMishraa" target="_blank" rel="noopener noreferrer">
                 <svg
                   className='w-8 h-8'
                   role="img"
@@ -90,24 +90,20 @@ export default function About() {
           </ol>
           <h2 className='mb-6 text-3xl font-bold'>Headshots</h2>
           <div className="flex space-x-8">
-            <a href="/avatar.jpg">
-              <Image
-                alt="Pritish headshot"
-                width={400}
-                quality={100}
-                src={avatar}
-                className="rounded-md"
-              />
-            </a>
-            <a href="/avatar.jpg">
-              <Image
-                alt="Pritish headshot"
-                width={400}
-                quality={100}
-                src={avatar}
-                className="rounded-md grayscale"
-              />
-            </a>
+            <Image
+              alt="Pritish headshot"
+              width={400}
+              quality={100}
+              src={avatar}
+              className="rounded-md"
+            />
+            <Image
+              alt="Pritish headshot"
+              width={400}
+              quality={100}
+              src={avatar}
+              className="rounded-md grayscale"
+            />
           </div>
         </div>
       </div>
