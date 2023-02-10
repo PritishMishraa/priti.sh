@@ -4,6 +4,17 @@ import useDelayedRender from 'use-delayed-render';
 import { useState, useEffect } from 'react';
 import styles from 'styles/mobile-menu.module.css';
 
+const ExternalLink = ({ href, children }) => (
+  <a
+    className="flex w-auto pb-4"
+    target="_blank"
+    rel="noopener noreferrer"
+    href={href}
+  >
+    {children}
+  </a>
+);
+
 export default function MobileMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { mounted: isMenuMounted, rendered: isMenuRendered } = useDelayedRender(
@@ -100,6 +111,14 @@ export default function MobileMenu() {
           <li
             className="text-sm font-semibold text-gray-900 border-b border-gray-300 dark:border-gray-700 dark:text-gray-100"
             style={{ transitionDelay: '325ms' }}
+          >
+            <ExternalLink href="https://flowcv.com/resume/385druucnq">
+              Resume
+            </ExternalLink>
+          </li>
+          <li
+            className="text-sm font-semibold text-gray-900 border-b border-gray-300 dark:border-gray-700 dark:text-gray-100"
+            style={{ transitionDelay: '350ms' }}
           >
             <Link href="/about" className="flex w-auto pb-4">
               About
