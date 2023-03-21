@@ -31,6 +31,7 @@ export default function Document() {
           content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
           name="robots"
         />
+        <script defer data-domain="priti-sh.vercel.app" src="https://plausible.io/js/script.js"></script>
       </Head>
       <body className="text-white bg-white dark:bg-black dark:text-black">
         <Main />
