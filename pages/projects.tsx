@@ -96,15 +96,6 @@ export default function Projects() {
                         hostedLink="https://react-pwa-temp-controls.vercel.app/"
                         isMigrating={false}
                     />
-                    <ProjectCard
-                        title="Stoic Quotes"
-                        description="A simple website that displays random stoic quotes. My first attempt at connencting a back end to a front end."
-                        gradient="from-[#42047e] to-[#07f49e]"
-                        tech={["ExpressJS", "HTML", "CSS"]}
-                        githubLink="https://github.com/PritishMishraa/stoic-quotes"
-                        hostedLink="https://stoic-quotes-pritish.herokuapp.com/"
-                        isMigrating={true}
-                    />
                 </div>
             </div>
         </Container>
