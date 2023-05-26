@@ -29,9 +29,8 @@ export default function Document() {
           content="#ffffff" />
         <meta
           content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
-          name="robots"
-        />
-        <script defer data-domain="priti-sh.vercel.app" src="https://plausible.io/js/script.js"></script>
+          name="robots" />
+        <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "abf38da9bf214a54b7550cee4b415c7b"}'></script>
       </Head>
       <body className="text-white bg-white dark:bg-black dark:text-black">
         <Main />
