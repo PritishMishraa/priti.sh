@@ -45,6 +45,15 @@ export default function Home() {
           </h3>
           <div className="flex flex-col w-full gap-6">
             <ProjectCard
+              title="ThreadCraft"
+              description="Seamlessly transform Twitter Threads to captivating LinkedIn Carousels"
+              gradient="from-[#f5e6ad] to-[#f13c77]"
+              tech={["TypeScript", "NextJS", "TailwindCSS", "APIs"]}
+              githubLink="https://github.com/PritishMishraa/thread-to-carousel"
+              hostedLink="https://thread-to-carousel.vercel.app/"
+              isMigrating={false}
+            />
+            <ProjectCard
               title="Code Task"
               description="A platform that integrates LeetCode and Todoist using APIs and makes it easy for the user to keep track of his coding practice."
               gradient="from-[#ff0f7b] to-[#f89b29]"
@@ -52,15 +61,6 @@ export default function Home() {
               githubLink="https://github.com/PritishMishraa/code-task"
               hostedLink="https://codetask.vercel.app/"
               isMigrating={false}
-            />
-            <ProjectCard
-              title="Ideas Grab API"
-              description="An API built for the famous website IdeasGrab by David Delahunty. It is a collection of more than 3,600 project ideas to inspire you to create."
-              gradient="from-[#0061ff] to-[#60efff]"
-              tech={["NodeJS", "ExpressJS", "MongoDB"]}
-              githubLink="https://github.com/PritishMishraa/ideas-grab-api"
-              hostedLink="https://ideas-grab-api.herokuapp.com/"
-              isMigrating={true}
             />
           </div>
 

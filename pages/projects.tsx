@@ -16,6 +16,15 @@ export default function Projects() {
                 </p>
                 <div className="flex flex-col w-full gap-8">
                     <ProjectCard
+                        title="ThreadCraft"
+                        description="Seamlessly transform Twitter Threads to captivating LinkedIn Carousels"
+                        gradient="from-[#f5e6ad] to-[#f13c77]"
+                        tech={["TypeScript", "NextJS", "TailwindCSS", "APIs"]}
+                        githubLink="https://github.com/PritishMishraa/thread-to-carousel"
+                        hostedLink="https://thread-to-carousel.vercel.app/"
+                        isMigrating={false}
+                    />
+                    <ProjectCard
                         title="priti.sh"
                         description="My personal website ✨. It is a static website built using NextJS and TailwindCSS. It is hosted on Vercel."
                         gradient="from-[#239eab] to-[#74deee]"
