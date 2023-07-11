@@ -23,8 +23,26 @@ export default function Home() {
                 <Typing />
               </div>
               <div className="mb-16 text-gray-600 dark:text-gray-400">
-                Learning new technologies and creating products. Currently working on&nbsp;
-                <a href="https://codetask.vercel.app/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">Code Task</a>.
+                Learning new technologies and creating products. Currently
+                <br></br>working on{' '}
+                <a
+                  href="https://gatecsetracker.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline underline-offset-4"
+                >
+                  GATE CSE Tracker
+                </a>{' '}
+                and{' '}
+                <a
+                  href="https://thread-to-carousel.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline underline-offset-4"
+                >
+                  ThreadCraft
+                </a>
+                .
               </div>
             </div>
             <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto">
@@ -45,21 +63,27 @@ export default function Home() {
           </h3>
           <div className="flex flex-col w-full gap-6">
             <ProjectCard
-              title="ThreadCraft"
-              description="Seamlessly transform Twitter Threads to captivating LinkedIn Carousels"
-              gradient="from-[#f5e6ad] to-[#f13c77]"
-              tech={["TypeScript", "NextJS", "TailwindCSS", "APIs"]}
-              githubLink="https://github.com/PritishMishraa/thread-to-carousel"
+              title="GATE CSE Tracker"
+              description="A platform that helps GATE CSE aspirants to track their progress and streamline their preparation from free YouTube resourcea."
+              gradient="from-[#696eff] to-[#f8acff]"
+              tech={[
+                'NextJS 13',
+                'TypeScript',
+                'TailwindCSS',
+                'APIs',
+                'Scraping'
+              ]}
+              githubLink="https://github.com/PritishMishraa/gatecsetracker"
               hostedLink="https://thread-to-carousel.vercel.app/"
               isMigrating={false}
             />
             <ProjectCard
-              title="Code Task"
-              description="A platform that integrates LeetCode and Todoist using APIs and makes it easy for the user to keep track of his coding practice."
-              gradient="from-[#ff0f7b] to-[#f89b29]"
-              tech={["TypeScript", "NextJS", "NextAuth", "Prisma", "TailwindCSS"]}
-              githubLink="https://github.com/PritishMishraa/code-task"
-              hostedLink="https://codetask.vercel.app/"
+              title="ThreadCraft"
+              description="Seamlessly transform Twitter Threads to captivating LinkedIn Carousels"
+              gradient="from-[#f5e6ad] to-[#f13c77]"
+              tech={['TypeScript', 'NextJS', 'TailwindCSS', 'APIs']}
+              githubLink="https://github.com/PritishMishraa/thread-to-carousel"
+              hostedLink="https://thread-to-carousel.vercel.app/"
               isMigrating={false}
             />
           </div>
@@ -99,16 +123,16 @@ export default function Home() {
           <p className="mb-6 text-gray-600 dark:text-gray-400">
             Proof that I am legit.
           </p>
-          {
-            certificates.map((certificate) => {
-              return <CertificateCard
+          {certificates.map((certificate) => {
+            return (
+              <CertificateCard
                 key={certificate.index}
                 index={certificate.index}
                 title={certificate.title}
                 isCompleted={certificate.isCompleted}
               />
-            })
-          }
+            );
+          })}
         </div>
       </Container>
     </Suspense>
