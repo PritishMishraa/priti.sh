@@ -74,7 +74,7 @@ export default function Home() {
                 'Scraping'
               ]}
               githubLink="https://github.com/PritishMishraa/gatecsetracker"
-              hostedLink="https://thread-to-carousel.vercel.app/"
+              hostedLink="https://gatecsetracker.vercel.app/"
               isMigrating={false}
             />
             <ProjectCard

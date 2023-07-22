@@ -30,7 +30,7 @@ export default function Projects() {
               'Scraping'
             ]}
             githubLink="https://github.com/PritishMishraa/gatecsetracker"
-            hostedLink="https://thread-to-carousel.vercel.app/"
+            hostedLink="https://gatecsetracker.vercel.app/"
             isMigrating={false}
           />
           <ProjectCard
@@ -39,7 +39,7 @@ export default function Projects() {
             gradient="from-[#f5e6ad] to-[#f13c77]"
             tech={['TypeScript', 'NextJS', 'TailwindCSS', 'APIs']}
             githubLink="https://github.com/PritishMishraa/thread-to-carousel"
-            hostedLink="https://gatecsetracker.vercel.app/"
+            hostedLink="https://thread-to-carousel.vercel.app/"
             isMigrating={false}
           />
           <ProjectCard
