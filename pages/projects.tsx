@@ -12,7 +12,7 @@ export default function Projects() {
           Projects
         </h1>
         <p className="mb-10 text-gray-600 dark:text-gray-400">
-          These are all projects I made while learing fullstack development.
+          These are all projects I made while learning fullstack development.
           Each project presented here showcases my skills and abilities as a web
           developer, as well as my passion for creating engaging and
           user-friendly websites.
@@ -20,7 +20,7 @@ export default function Projects() {
         <div className="flex flex-col w-full gap-8">
           <ProjectCard
             title="GATE CSE Tracker"
-            description="A platform that helps GATE CSE aspirants to track their progress and streamline their preparation from free YouTube resourcea."
+            description="A platform that helps GATE CSE aspirants to track their progress and streamline their preparation from free YouTube resources. Currently cruising at 4K page views."
             gradient="from-[#696eff] to-[#f8acff]"
             tech={[
               'NextJS 13',
