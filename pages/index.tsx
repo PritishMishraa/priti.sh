@@ -75,7 +75,7 @@ export default function Home() {
               ]}
               githubLink="https://github.com/PritishMishraa/gatecsetracker"
               hostedLink="https://gatecsetracker.vercel.app/"
-              isMigrating={false}
+              isWIP={true}
             />
             <ProjectCard
               title="ThreadCraft"
@@ -84,7 +84,7 @@ export default function Home() {
               tech={['TypeScript', 'NextJS', 'TailwindCSS', 'APIs']}
               githubLink="https://github.com/PritishMishraa/thread-to-carousel"
               hostedLink="https://thread-to-carousel.vercel.app/"
-              isMigrating={false}
+              isWIP={true}
             />
           </div>
 

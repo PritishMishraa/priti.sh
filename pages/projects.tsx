@@ -31,7 +31,7 @@ export default function Projects() {
             ]}
             githubLink="https://github.com/PritishMishraa/gatecsetracker"
             hostedLink="https://gatecsetracker.vercel.app/"
-            isMigrating={false}
+            isWIP={true}
           />
           <ProjectCard
             title="ThreadCraft"
@@ -40,7 +40,7 @@ export default function Projects() {
             tech={['TypeScript', 'NextJS', 'TailwindCSS', 'APIs']}
             githubLink="https://github.com/PritishMishraa/thread-to-carousel"
             hostedLink="https://thread-to-carousel.vercel.app/"
-            isMigrating={false}
+            isWIP={true}
           />
           <ProjectCard
             title="priti.sh"
@@ -49,7 +49,6 @@ export default function Projects() {
             tech={['TypeScript', 'NextJS', 'TailwindCSS']}
             githubLink="https://github.com/PritishMishraa/priti.sh"
             hostedLink="https://priti-sh.vercel.app/"
-            isMigrating={false}
           />
           <ProjectCard
             title="Code Task"
@@ -58,7 +57,6 @@ export default function Projects() {
             tech={['TypeScript', 'NextJS', 'NextAuth', 'Prisma', 'TailwindCSS']}
             githubLink="https://github.com/PritishMishraa/code-task"
             hostedLink="https://codetask.vercel.app/"
-            isMigrating={false}
           />
           <ProjectCard
             title="Ideas Grab API"
@@ -76,7 +74,6 @@ export default function Projects() {
             tech={['Chrome Extension', 'Javascript']}
             githubLink="https://github.com/PritishMishraa/leetcode-like-percentage-extension"
             hostedLink="https://github.com/PritishMishraa/leetcode-like-percentage-extension"
-            isMigrating={false}
           />
           <ProjectCard
             title="add-shebangs"
@@ -85,7 +82,6 @@ export default function Projects() {
             tech={['NodeJS', 'CLI', 'NPM']}
             githubLink="https://github.com/PritishMishraa/add-shebangs"
             hostedLink="https://www.npmjs.com/package/add-shebangs"
-            isMigrating={false}
           />
           <ProjectCard
             title="Realtime Comment Section"
@@ -94,7 +90,6 @@ export default function Projects() {
             tech={['Javascript', 'Socket.IO', 'MongoDB']}
             githubLink="https://github.com/PritishMishraa/realtime-comment-section"
             hostedLink="https://github.com/PritishMishraa/realtime-comment-section"
-            isMigrating={false}
           />
           <ProjectCard
             title="Custom Barcode - ReactMini I"
@@ -103,7 +98,6 @@ export default function Projects() {
             tech={['ReactJS', 'PWA', 'CSS']}
             githubLink="https://github.com/PritishMishraa/react-barcode-app"
             hostedLink="https://react-barcode-app.vercel.app/"
-            isMigrating={false}
           />
           <ProjectCard
             title="Google Maps - ReactMini II"
@@ -112,7 +106,6 @@ export default function Projects() {
             tech={['ReactJS', 'CSS']}
             githubLink="https://github.com/PritishMishraa/react-google-map"
             hostedLink="https://react-google-map-black.vercel.app/"
-            isMigrating={false}
           />
           <ProjectCard
             title="Temperature Control - ReactMini III"
@@ -121,7 +114,6 @@ export default function Projects() {
             tech={['ReactJS', 'PWA', 'CSS']}
             githubLink="https://github.com/PritishMishraa/react-pwa-temp-controls"
             hostedLink="https://react-pwa-temp-controls.vercel.app/"
-            isMigrating={false}
           />
         </div>
       </div>
