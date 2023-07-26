@@ -68,7 +68,7 @@ export default function About() {
             </div>
           </div>
           <h3 className='my-6 text-3xl font-bold'>Education</h3>
-          <ol className="relative border-l border-gray-200 dark:border-gray-600">
+          <ol className="relative border-l ml-6 border-gray-200 dark:border-gray-600">
             <TimeBox
               text=""
               linkText="College - Manipal University Jaipur"

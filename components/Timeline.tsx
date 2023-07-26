@@ -3,7 +3,7 @@ import TimeBoxComment from "./TimeBoxComment";
 
 export default function Timeline() {
     return (
-        <ol className="relative border-l border-gray-200 dark:border-gray-600">
+        <ol className="relative border-l ml-6 border-gray-200 dark:border-gray-600">
             <TimeBox
                 text="Longest Streak on LeetCode - "
                 linkText="HeatMap"
