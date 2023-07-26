@@ -1,3 +1,6 @@
+import { useTheme } from 'next-themes';
+import GitHubCalendar from 'react-github-calendar';
+
 import NPM from 'components/metrics/NPM';
 import Container from 'components/Container';
 import ReadingNow from 'components/ReadingNow';
@@ -5,6 +8,8 @@ import LeetCode from 'components/metrics/Leetcode';
 import CodingNinjas from 'components/metrics/CodingNinjas';
 
 export default function Dashboard() {
+  const { resolvedTheme } = useTheme();
+
   return (
     <Container
       title="Dashboard – Pritish Mishra"
@@ -15,7 +20,8 @@ export default function Dashboard() {
           Dashboard
         </h1>
         <p className="mb-10 text-gray-600 dark:text-gray-400">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur quos sit vitae? Lorem ipsum dolor sit amet.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur
+          quos sit vitae? Lorem ipsum dolor sit amet.
         </p>
         <h2 className="text-3xl font-bold tracking-tight text-black md:mb-2 dark:text-white">
           Coding
@@ -28,11 +34,28 @@ export default function Dashboard() {
           <CodingNinjas />
         </div>
         <h2 className="mt-16 text-3xl font-bold tracking-tight text-black md:mb-2 dark:text-white">
-          NPM
+          Github
         </h2>
         <p className="mb-4 text-gray-600 dark:text-gray-400">
-          My NPM Package!
+          I try to be consistent
         </p>
+        {resolvedTheme === 'dark' ? (
+          <GitHubCalendar
+            username="PritishMishraa"
+            colorScheme="dark"
+            style={{ color: 'white' }}
+          />
+        ) : (
+          <GitHubCalendar
+            username="PritishMishraa"
+            colorScheme="light"
+            style={{ color: 'black' }}
+          />
+        )}
+        <h2 className="mt-16 text-3xl font-bold tracking-tight text-black md:mb-2 dark:text-white">
+          NPM
+        </h2>
+        <p className="mb-4 text-gray-600 dark:text-gray-400">My NPM Package!</p>
         <NPM />
         <h2 className="mt-16 text-3xl font-bold tracking-tight text-black md:mb-2 dark:text-white">
           Currently Reading
