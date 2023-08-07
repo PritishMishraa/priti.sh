@@ -20,7 +20,7 @@ export default function Projects() {
         <div className="flex flex-col w-full gap-8">
           <ProjectCard
             title="GATE CSE Tracker"
-            description="A platform that helps GATE CSE aspirants to track their progress and streamline their preparation from free YouTube resources. Currently cruising at 4K page views."
+            description="A platform that helps GATE CSE aspirants to track their progress and streamline their preparation from free YouTube resources. Currently cruising at 10K page views."
             gradient="from-[#696eff] to-[#f8acff]"
             tech={[
               'NextJS 13',
