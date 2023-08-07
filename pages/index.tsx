@@ -121,7 +121,7 @@ export default function Home() {
             Certifications
           </h3>
           <p className="mb-6 text-gray-600 dark:text-gray-400">
-            Proof that I am legit.
+            Definitely fun!
           </p>
           {certificates.map((certificate) => {
             return (
