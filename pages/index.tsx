@@ -36,12 +36,12 @@ export default function Home() {
                 </a>{' '}
                 and{' '}
                 <a
-                  href="https://thread-to-carousel.vercel.app/"
+                  href="https://c2-ladders-pro.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline underline-offset-4"
                 >
-                  ThreadCraft
+                  C2 Ladders Pro
                 </a>
                 .
               </div>
