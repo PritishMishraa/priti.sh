@@ -7,8 +7,7 @@ type TProjectCard = {
   tech: string[];
   githubLink: string;
   hostedLink: string;
-  isMigrating?: boolean;
-  isWIP?: boolean;
+  children?: React.ReactNode;
 };
 
 export default function ProjectCard({
@@ -18,8 +17,7 @@ export default function ProjectCard({
   tech,
   githubLink,
   hostedLink,
-  isMigrating = false,
-  isWIP = false
+  children
 }: TProjectCard) {
   const slicedTechArray = tech.slice(0, 2);
 
@@ -37,18 +35,7 @@ export default function ProjectCard({
             <h4 className="w-full text-xl font-semibold tracking-tight text-gray-900 md:text-2xl dark:text-gray-100">
               {title}
             </h4>
-            {isMigrating && (
-              <span className="inline-flex items-center bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded-lg dark:bg-red-900 dark:text-red-300 mr-2">
-                <span className="w-2 h-2 mr-1 bg-red-500 dark:bg-red-300 rounded-full"></span>
-                Migrating
-              </span>
-            )}
-            {isWIP && (
-              <span className="inline-flex items-center bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-lg dark:bg-green-900 dark:text-green-300 mr-2">
-                <span className="w-2 h-2 mr-1 bg-green-500 dark:bg-green-300 rounded-full"></span>
-                WIP
-              </span>
-            )}
+            {children}
           </div>
         </div>
         <h4 className="w-full mb-4 text-sm tracking-tight text-gray-900 md:text-base sm:mb-3 dark:text-gray-100">

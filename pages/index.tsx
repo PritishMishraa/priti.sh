@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { Suspense } from 'react';
 
 import Typing from 'components/Typing';
+import { WIP } from 'components/Status';
 import Timeline from 'components/Timeline';
 import Container from 'components/Container';
 import ProjectCard from 'components/ProjectCard';
@@ -63,6 +64,16 @@ export default function Home() {
           </h3>
           <div className="flex flex-col w-full gap-6">
             <ProjectCard
+              title="C2 Ladders Pro"
+              description="Climb the Codeforces ratings with a plan. This is your mordern A2OJ Ladders."
+              gradient="from-[#bf0fff] to-[#cbff49]"
+              tech={['NextJS 13', 'TypeScript', 'TailwindCSS', 'shadcn/ui']}
+              githubLink="https://github.com/PritishMishraa/c2-ladders-pro"
+              hostedLink="https://c2-ladders-pro.vercel.app/"
+            >
+              <WIP />
+            </ProjectCard>
+            <ProjectCard
               title="GATE CSE Tracker"
               description="A platform that helps GATE CSE aspirants to track their progress and streamline their preparation from free YouTube resources. Currently cruising at 10K page views."
               gradient="from-[#696eff] to-[#f8acff]"
@@ -75,17 +86,9 @@ export default function Home() {
               ]}
               githubLink="https://github.com/PritishMishraa/gatecsetracker"
               hostedLink="https://gatecsetracker.vercel.app/"
-              isWIP={true}
-            />
-            <ProjectCard
-              title="C2 Ladders Pro"
-              description="Climb the Codeforces ratings with a plan. This is your mordern A2OJ Ladders."
-              gradient="from-[#bf0fff] to-[#cbff49]"
-              tech={['NextJS 13', 'TypeScript', 'TailwindCSS', 'shadcn/ui']}
-              githubLink="https://github.com/PritishMishraa/c2-ladders-pro"
-              hostedLink="https://c2-ladders-pro.vercel.app/"
-              isWIP={true}
-            />
+            >
+              <WIP />
+            </ProjectCard>
           </div>
 
           <Link

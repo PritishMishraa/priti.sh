@@ -1,5 +1,6 @@
 import Container from 'components/Container';
 import ProjectCard from 'components/ProjectCard';
+import { Migrating, Paused, WIP } from 'components/Status';
 
 export default function Projects() {
   return (
@@ -25,8 +26,9 @@ export default function Projects() {
             tech={['NextJS 13', 'TypeScript', 'TailwindCSS', 'shadcn/ui']}
             githubLink="https://github.com/PritishMishraa/c2-ladders-pro"
             hostedLink="https://c2-ladders-pro.vercel.app/"
-            isWIP={true}
-          />
+          >
+            <WIP />
+          </ProjectCard>
           <ProjectCard
             title="GATE CSE Tracker"
             description="A platform that helps GATE CSE aspirants to track their progress and streamline their preparation from free YouTube resources. Currently cruising at 10K page views."
@@ -40,8 +42,9 @@ export default function Projects() {
             ]}
             githubLink="https://github.com/PritishMishraa/gatecsetracker"
             hostedLink="https://gatecsetracker.vercel.app/"
-            isWIP={true}
-          />
+          >
+            <WIP />
+          </ProjectCard>
           <ProjectCard
             title="ThreadCraft"
             description="Seamlessly transform Twitter Threads to captivating LinkedIn Carousels"
@@ -49,8 +52,9 @@ export default function Projects() {
             tech={['TypeScript', 'NextJS', 'TailwindCSS', 'APIs']}
             githubLink="https://github.com/PritishMishraa/thread-to-carousel"
             hostedLink="https://thread-to-carousel.vercel.app/"
-            isWIP={true}
-          />
+          >
+            <Paused />
+          </ProjectCard>
           <ProjectCard
             title="priti.sh"
             description="My personal website ✨. It is a static website built using NextJS and TailwindCSS. It is hosted on Vercel."
@@ -74,8 +78,9 @@ export default function Projects() {
             tech={['NodeJS', 'ExpressJS', 'MongoDB']}
             githubLink="https://github.com/PritishMishraa/ideas-grab-api"
             hostedLink="https://ideas-grab-api.herokuapp.com/"
-            isMigrating={true}
-          />
+          >
+            <Migrating />
+          </ProjectCard>
           <ProjectCard
             title="Google Chrome Extension - LeetCode Like Percentage"
             description="An API built for the famous website IdeasGrab by David Delahunty. It is a collection of more than 3,600 project ideas to inspire you to create."
