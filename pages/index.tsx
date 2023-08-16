@@ -78,12 +78,12 @@ export default function Home() {
               isWIP={true}
             />
             <ProjectCard
-              title="ThreadCraft"
-              description="Seamlessly transform Twitter Threads to captivating LinkedIn Carousels"
-              gradient="from-[#f5e6ad] to-[#f13c77]"
-              tech={['TypeScript', 'NextJS', 'TailwindCSS', 'APIs']}
-              githubLink="https://github.com/PritishMishraa/thread-to-carousel"
-              hostedLink="https://thread-to-carousel.vercel.app/"
+              title="C2 Ladders Pro"
+              description="Climb the Codeforces ratings with a plan. This is your mordern A2OJ Ladders."
+              gradient="from-[#bf0fff] to-[#cbff49]"
+              tech={['NextJS 13', 'TypeScript', 'TailwindCSS', 'shadcn/ui']}
+              githubLink="https://github.com/PritishMishraa/c2-ladders-pro"
+              hostedLink="https://c2-ladders-pro.vercel.app/"
               isWIP={true}
             />
           </div>
