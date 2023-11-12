@@ -36,12 +36,12 @@ export default function Home() {
                 </a>{' '}
                 and{' '}
                 <a
-                  href="https://c2-ladders-pro.vercel.app/"
+                  href="https://marcam.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline underline-offset-4"
                 >
-                  C2 Ladders Pro
+                  marcam
                 </a>
                 .
               </div>
@@ -64,15 +64,20 @@ export default function Home() {
           </h3>
           <div className="flex flex-col w-full gap-6">
             <ProjectCard
-              title="C2 Ladders Pro"
-              description="Climb the Codeforces ratings with a plan. This is your mordern A2OJ Ladders."
-              gradient="from-[#bf0fff] to-[#cbff49]"
-              tech={['NextJS 13', 'TypeScript', 'TailwindCSS', 'shadcn/ui']}
-              githubLink="https://github.com/PritishMishraa/c2-ladders-pro"
-              hostedLink="https://c2-ladders-pro.vercel.app/"
-            >
-              <WIP />
-            </ProjectCard>
+              title="marcam"
+              description="A feature rich, minimalistic and open source LeetCode bookmarker."
+              gradient="from-[#61f4de] to-[#6e78ff]"
+              tech={[
+                'NextJS 13',
+                'TypeScript',
+                'React Query',
+                'Postgres',
+                'TailwindCSS',
+                'shadcn/ui'
+              ]}
+              githubLink="https://github.com/PritishMishraa/marcam"
+              hostedLink="https://marcam.vercel.app/"
+            />
             <ProjectCard
               title="GATE CSE Tracker"
               description="A platform that helps GATE CSE aspirants to track their progress and streamline their preparation from free YouTube resources. Currently cruising at 10K page views."
@@ -86,9 +91,7 @@ export default function Home() {
               ]}
               githubLink="https://github.com/PritishMishraa/gatecsetracker"
               hostedLink="https://gatecsetracker.vercel.app/"
-            >
-              <WIP />
-            </ProjectCard>
+            />
           </div>
 
           <Link

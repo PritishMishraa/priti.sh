@@ -20,6 +20,21 @@ export default function Projects() {
         </p>
         <div className="flex flex-col w-full gap-8">
           <ProjectCard
+            title="marcam"
+            description="A feature rich, minimalistic and open source LeetCode bookmarker."
+            gradient="from-[#61f4de] to-[#6e78ff]"
+            tech={[
+              'NextJS 13',
+              'TypeScript',
+              'React Query',
+              'Postgres',
+              'TailwindCSS',
+              'shadcn/ui'
+            ]}
+            githubLink="https://github.com/PritishMishraa/marcam"
+            hostedLink="https://marcam.vercel.app/"
+          />
+          <ProjectCard
             title="C2 Ladders Pro"
             description="Climb the Codeforces ratings with a plan. This is your mordern A2OJ Ladders."
             gradient="from-[#bf0fff] to-[#cbff49]"
@@ -27,7 +42,7 @@ export default function Projects() {
             githubLink="https://github.com/PritishMishraa/c2-ladders-pro"
             hostedLink="https://c2-ladders-pro.vercel.app/"
           >
-            <WIP />
+            <Paused />
           </ProjectCard>
           <ProjectCard
             title="GATE CSE Tracker"
@@ -42,9 +57,7 @@ export default function Projects() {
             ]}
             githubLink="https://github.com/PritishMishraa/gatecsetracker"
             hostedLink="https://gatecsetracker.vercel.app/"
-          >
-            <WIP />
-          </ProjectCard>
+          />
           <ProjectCard
             title="ThreadCraft"
             description="Seamlessly transform Twitter Threads to captivating LinkedIn Carousels"
