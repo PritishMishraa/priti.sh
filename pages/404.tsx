@@ -11,8 +11,8 @@ export default function NotFound() {
   useEffect(() => {
     try {
       (async () => {
-        await countapi.hit("priti.sh", "404visit")
-        const { value } = await countapi.get("priti.sh", "404visit");
+        await countapi.hit("pritish.in", "404visit")
+        const { value } = await countapi.get("pritish.in", "404visit");
         setCount(value);
       })();
     } catch (error) {

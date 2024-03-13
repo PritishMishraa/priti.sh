@@ -69,12 +69,12 @@ export default function Projects() {
             <Paused />
           </ProjectCard>
           <ProjectCard
-            title="priti.sh"
+            title="pritish.in"
             description="My personal website ✨. It is a static website built using NextJS and TailwindCSS. It is hosted on Vercel."
             gradient="from-[#239eab] to-[#74deee]"
             tech={['TypeScript', 'NextJS', 'TailwindCSS']}
             githubLink="https://github.com/PritishMishraa/priti.sh"
-            hostedLink="https://priti-sh.vercel.app/"
+            hostedLink="https://pritish.in/"
           />
           <ProjectCard
             title="Code Task"

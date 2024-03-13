@@ -1,6 +1,6 @@
 [
     {
-        "title": "priti.sh",
+        "title": "pritish.in",
         "description": "My personal website ✨. It is a static website built using NextJS and TailwindCSS. It is hosted on Vercel.",
         "gradient": "from-[#239eab] to-[#74deee]",
         "tech": [
@@ -8,7 +8,7 @@
             "NextJS",
             "TailwindCSS"
         ],
-        "githubLink": "https://github.com/PritishMishraa/priti.sh",
+        "githubLink": "https://github.com/PritishMishraa/pritish.in",
         "hostedLink": "https://priti-sh.vercel.app/",
         "isMigrating": false
     },

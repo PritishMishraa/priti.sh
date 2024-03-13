@@ -2,7 +2,7 @@
   <img src="screenshot.png">
 </div>
 
-# priti.sh
+# pritish.in
 
 - **Framework**: [Next.js](https://nextjs.org/)
 - **Deployment**: [Vercel](https://vercel.com)
