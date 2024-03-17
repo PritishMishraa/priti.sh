@@ -1,6 +1,9 @@
+import TechLogo from 'components/TechLogo';
 import Container from 'components/Container';
 import ProjectCard from 'components/ProjectCard';
 import { Migrating, Paused, WIP } from 'components/Status';
+
+import logos from '../utils/logos.json'
 
 export default function Projects() {
   return (
@@ -18,7 +21,7 @@ export default function Projects() {
           developer, as well as my passion for creating engaging and
           user-friendly websites.
         </p>
-        <div className="flex flex-col w-full gap-8">
+        <div className="mb-10 flex flex-col w-full gap-8">
           <ProjectCard
             title="marcam"
             description="A feature rich, minimalistic and open source LeetCode bookmarker."
@@ -142,6 +145,11 @@ export default function Projects() {
             githubLink="https://github.com/PritishMishraa/react-pwa-temp-controls"
             hostedLink="https://react-pwa-temp-controls.vercel.app/"
           />
+        </div>
+        <div className='grid w-full grid-cols-3 md:grid-cols-4 md:gap-y-8 gap-y-4'>
+          {logos.map(logo => {
+            return <TechLogo key={logo.title} path={logo.path} title={logo.title} />
+          })}
         </div>
       </div>
     </Container>

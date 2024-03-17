@@ -1,7 +1,8 @@
+const { withContentlayer } = require('next-contentlayer');
 /**
  * @type {import('next').NextConfig}
  */
-module.exports = {
+module.exports = withContentlayer({
   reactStrictMode: false,
   images: {
     domains: [
@@ -22,7 +23,7 @@ module.exports = {
       }
     ];
   }
-};
+});
 
 // https://nextjs.org/docs/advanced-features/security-headers
 const ContentSecurityPolicy = `

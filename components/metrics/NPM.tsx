@@ -13,7 +13,7 @@ export default function NPMCard() {
 
     return (
         <MetricCard
-            header="Total Downloads"
+            header="NPM Downloads"
             link={link}
             metric={downloads}
         />

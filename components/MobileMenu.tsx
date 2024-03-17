@@ -80,21 +80,13 @@ export default function MobileMenu() {
             className="text-sm font-semibold text-gray-900 border-b border-gray-300 dark:border-gray-700 dark:text-gray-100"
             style={{ transitionDelay: '200ms' }}
           >
-            <Link href="/dashboard" className="flex w-auto pb-4">
-              Dashboard
+            <Link href="/blog" className="flex w-auto pb-4">
+              Blog
             </Link>
           </li>
           <li
             className="text-sm font-semibold text-gray-900 border-b border-gray-300 dark:border-gray-700 dark:text-gray-100"
-            style={{ transitionDelay: '250ms' }}
-          >
-            <Link href="/stack" className="flex w-auto pb-4">
-              Stack
-            </Link>
-          </li>
-          <li
-            className="text-sm font-semibold text-gray-900 border-b border-gray-300 dark:border-gray-700 dark:text-gray-100"
-            style={{ transitionDelay: '275ms' }}
+            style={{ transitionDelay: '225ms' }}
           >
             <Link href="/leetcode" className="flex w-auto pb-4">
               LeetCode
@@ -102,7 +94,7 @@ export default function MobileMenu() {
           </li>
           <li
             className="text-sm font-semibold text-gray-900 border-b border-gray-300 dark:border-gray-700 dark:text-gray-100"
-            style={{ transitionDelay: '300ms' }}
+            style={{ transitionDelay: '250ms' }}
           >
             <Link href="/tbr" className="flex w-auto pb-4">
               To Be Read
@@ -110,19 +102,11 @@ export default function MobileMenu() {
           </li>
           <li
             className="text-sm font-semibold text-gray-900 border-b border-gray-300 dark:border-gray-700 dark:text-gray-100"
-            style={{ transitionDelay: '325ms' }}
+            style={{ transitionDelay: '275ms' }}
           >
             <ExternalLink href="https://flowcv.com/resume/385druucnq">
               Resume
             </ExternalLink>
-          </li>
-          <li
-            className="text-sm font-semibold text-gray-900 border-b border-gray-300 dark:border-gray-700 dark:text-gray-100"
-            style={{ transitionDelay: '350ms' }}
-          >
-            <Link href="/about" className="flex w-auto pb-4">
-              About
-            </Link>
           </li>
         </ul>
       )}

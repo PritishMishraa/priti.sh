@@ -3,12 +3,13 @@ import Image from 'next/image';
 import { Suspense } from 'react';
 
 import Typing from 'components/Typing';
-import { WIP } from 'components/Status';
 import Timeline from 'components/Timeline';
 import Container from 'components/Container';
 import ProjectCard from 'components/ProjectCard';
 import certificates from '../utils/certificates.json';
 import CertificateCard from 'components/CertificateCard';
+import NPMCard from 'components/metrics/NPM';
+import GitHubCard from 'components/metrics/Github';
 
 export default function Home() {
   return (
@@ -116,29 +117,13 @@ export default function Home() {
               </svg>
             </>
           </Link>
-          <h3 className="mt-16 mb-4 text-2xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
-            Journey
+          <h3 className="mt-8 mb-4 text-2xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
+            Contribution
           </h3>
-          <p className="mb-6 text-gray-600 dark:text-gray-400">
-            Smilestones I collected over the years.
-          </p>
-          <Timeline />
-          <h3 className="mt-16 mb-4 text-2xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
-            Certifications
-          </h3>
-          <p className="mb-6 text-gray-600 dark:text-gray-400">
-            Definitely fun!
-          </p>
-          {certificates.map((certificate) => {
-            return (
-              <CertificateCard
-                key={certificate.index}
-                index={certificate.index}
-                title={certificate.title}
-                isCompleted={certificate.isCompleted}
-              />
-            );
-          })}
+          <div className="flex flex-col w-full gap-4">
+            <NPMCard />
+            <GitHubCard />
+          </div>
         </div>
       </Container>
     </Suspense>

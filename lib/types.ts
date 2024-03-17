@@ -1,3 +1,5 @@
+import exp from "constants";
+
 export type NowPlayingSong = {
   album: string;
   albumImageUrl: string;
@@ -51,6 +53,14 @@ export type LeetCodeContestRating = {
 
 export type NPMDownloades = {
   downloads: number;
+}
+
+export type GitHub = {
+  stars: number;
+}
+
+export type Views = {
+  views: number;
 }
 
 export type author = {
