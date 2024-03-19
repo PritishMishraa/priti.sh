@@ -26,18 +26,33 @@ export default function Footer() {
           >
             Home
           </Link>
-        </div>
-        <div className="flex flex-col space-y-4">
-          <ExternalLink href="https://flowcv.com/resume/385druucnq">
-            Resume
-          </ExternalLink>
+          <Link
+            href="/project"
+            className="text-gray-500 transition hover:text-gray-600 hover:dark:text-gray-400"
+          >
+            Projects
+          </Link>
         </div>
         <div className="flex flex-col space-y-4">
           <Link
-            href="/tbr"
+            href="/blog"
+            className="text-gray-500 transition hover:text-gray-600 hover:dark:text-gray-400"
+          >
+            Blog
+          </Link>
+          <Link
+            href="/leetcode"
+            className="text-gray-500 transition hover:text-gray-600 hover:dark:text-gray-400"
+          >
+            Leetcode
+          </Link>
+        </div>
+        <div className="flex flex-col space-y-4">
+          <Link
+            href="/book"
             className="text-gray-500 transition hover:text-gray-600"
           >
-            To Be Read
+            Book
           </Link>
         </div>
       </div>

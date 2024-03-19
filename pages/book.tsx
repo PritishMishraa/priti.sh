@@ -2,7 +2,7 @@ import Books from "components/Books";
 import Container from "components/Container";
 import ReadingNow from "components/ReadingNow";
 
-export default function TBR() {
+export default function Book() {
     return (
         <Container
             title="Books – Pritish Mishra"
@@ -22,7 +22,7 @@ export default function TBR() {
                 </h2>
                 <ReadingNow />
                 <h2 className="mt-8 text-3xl font-bold tracking-tight text-black md:mb-2 dark:text-white">
-                    TBR
+                    To Be Read
                 </h2>
                 <Books />
             </div>

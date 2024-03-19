@@ -70,12 +70,28 @@ export default function Container(props) {
           <div className="ml-[-0.60rem]">
             <MobileMenu />
             <NavItem href="/" text="Home" />
-            <NavItem href="/projects" text="Projects" />
+            <NavItem href="/project" text="Projects" />
             <NavItem href="/blog" text="Blog" />
             <NavItem href="/leetcode" text="LeetCode" />
+            <NavItem href="/book" text="Book" />
           </div>
           <div className='flex gap-4 items-center'>
             <div className='flex gap-4'>
+              <div>
+                <a href="https://flowcv.com/resume/385druucnq" target="_blank" rel="noopener noreferrer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className='w-5 h-5'
+                    role="img"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" /><path d="M14 2v4a2 2 0 0 0 2 2h4" /><path d="M10 9H8" /><path d="M16 13H8" /><path d="M16 17H8" />
+                  </svg>
+                </a>
+              </div>
               <div>
                 <a href="https://www.linkedin.com/in/pritish-mishra-3118621bb/" target="_blank" rel="noopener noreferrer">
                   <svg

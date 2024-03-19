@@ -3,12 +3,9 @@ import Image from 'next/image';
 import { Suspense } from 'react';
 
 import Typing from 'components/Typing';
-import Timeline from 'components/Timeline';
 import Container from 'components/Container';
-import ProjectCard from 'components/ProjectCard';
-import certificates from '../utils/certificates.json';
-import CertificateCard from 'components/CertificateCard';
 import NPMCard from 'components/metrics/NPM';
+import ProjectCard from 'components/ProjectCard';
 import GitHubCard from 'components/metrics/Github';
 
 export default function Home() {
@@ -16,35 +13,13 @@ export default function Home() {
     <Suspense fallback={null}>
       <Container>
         <div className="flex flex-col items-start justify-center max-w-2xl pb-16 mx-auto border-gray-200 dark:border-gray-700">
-          <div className="flex flex-col-reverse items-start sm:flex-row">
-            <div className="flex flex-col pr-8">
+          <div className="flex flex-col-reverse items-start sm:flex-row w-full">
+            <div className="flex-1 flex flex-col pr-8">
               <h1 className="mb-1 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
                 Pritish Mishra
               </h1>
-              <div className="mb-4 font-semibold text-gray-700 dark:text-gray-200">
-                <Typing />
-              </div>
-              <div className="mb-16 text-gray-600 dark:text-gray-400">
-                Learning new technologies and creating products. Currently
-                <br></br>working on{' '}
-                <a
-                  href="https://gatecsetracker.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline underline-offset-4"
-                >
-                  GATE CSE Tracker
-                </a>{' '}
-                and{' '}
-                <a
-                  href="https://marcam.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline underline-offset-4"
-                >
-                  marcam
-                </a>
-                .
+              <div className="mb-16 w-full text-gray-600 dark:text-gray-400">
+                on the internet with Dev Tools open
               </div>
             </div>
             <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto">
@@ -118,7 +93,7 @@ export default function Home() {
             </>
           </Link>
           <h3 className="mt-8 mb-4 text-2xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
-            Contribution
+            Contributions
           </h3>
           <div className="flex flex-col w-full gap-4">
             <NPMCard />
