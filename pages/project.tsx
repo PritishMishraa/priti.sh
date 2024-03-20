@@ -16,10 +16,7 @@ export default function Projects() {
           Projects
         </h1>
         <p className="mb-10 text-gray-600 dark:text-gray-400">
-          These are all projects I made while learning fullstack development.
-          Each project presented here showcases my skills and abilities as a web
-          developer, as well as my passion for creating engaging and
-          user-friendly websites.
+          These are all the projects I made while learning full-stack development. Each project presented here showcases my skills and abilities as a web developer and my passion for creating engaging and user-friendly websites.
         </p>
         <div className="mb-10 flex flex-col w-full gap-8">
           <ProjectCard
