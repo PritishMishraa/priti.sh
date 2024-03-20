@@ -96,17 +96,9 @@ export default function MobileMenu() {
             className="text-sm font-semibold text-gray-900 border-b border-gray-300 dark:border-gray-700 dark:text-gray-100"
             style={{ transitionDelay: '250ms' }}
           >
-            <Link href="/tbr" className="flex w-auto pb-4">
-              To Be Read
+            <Link href="/book" className="flex w-auto pb-4">
+              Book
             </Link>
-          </li>
-          <li
-            className="text-sm font-semibold text-gray-900 border-b border-gray-300 dark:border-gray-700 dark:text-gray-100"
-            style={{ transitionDelay: '275ms' }}
-          >
-            <ExternalLink href="https://flowcv.com/resume/385druucnq">
-              Resume
-            </ExternalLink>
           </li>
         </ul>
       )}
