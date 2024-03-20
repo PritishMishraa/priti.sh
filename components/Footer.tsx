@@ -52,7 +52,7 @@ export default function Footer() {
             href="/book"
             className="text-gray-500 transition hover:text-gray-600"
           >
-            Book
+            Books
           </Link>
         </div>
       </div>

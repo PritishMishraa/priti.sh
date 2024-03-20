@@ -71,7 +71,7 @@ export default function Home() {
           </div>
 
           <Link
-            href="/projects"
+            href="/project"
             className="flex items-center h-6 mt-8 leading-7 text-gray-600 transition-all rounded-lg dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200"
           >
             <>
