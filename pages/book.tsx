@@ -5,7 +5,7 @@ import ReadingNow from "components/ReadingNow";
 export default function Book() {
     return (
         <Container
-            title="Books – Pritish Mishra"
+            title="Book – Pritish Mishra"
             description="All the books I want to read!"
         >
             <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-16">
