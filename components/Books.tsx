@@ -14,6 +14,7 @@ export default function Books() {
             author={'-'}
             image={''}
             title={'-'}
+            slug={''}
         />
     }
 
@@ -25,6 +26,7 @@ export default function Books() {
                     author={book.authors[0].name}
                     image={book.thumbnail}
                     title={book.title}
+                    slug={book.slug}
                 />
             })}
         </div>

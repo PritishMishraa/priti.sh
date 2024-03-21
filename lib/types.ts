@@ -72,6 +72,7 @@ export type book = {
   thumbnail: string;
   authors: author[];
   pageCount: number;
+  slug: string;
 }
 
 export type TBR = {
