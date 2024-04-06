@@ -28,23 +28,7 @@ export default function Document() {
           content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
           name="robots"
         />
-        <script
-          defer
-          src="https://static.cloudflareinsights.com/beacon.min.js"
-          data-cf-beacon='{"token": "abf38da9bf214a54b7550cee4b415c7b"}'
-        ></script>
-        <script
-          type="text/javascript"
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(c,l,a,r,i,t,y){
-                  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-              })(window, document, "clarity", "script", "ifkdxdy836");
-            `
-          }}
-        />
+        <script src="https://beamanalytics.b-cdn.net/beam.min.js" data-token="8f32dfb2-00bc-4a24-8d11-36e1b5eb9fd3" async></script>
       </Head>
       <body className="text-white bg-white dark:bg-black dark:text-black">
         <Main />
