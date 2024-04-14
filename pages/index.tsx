@@ -40,19 +40,18 @@ export default function Home() {
           </h3>
           <div className="flex flex-col w-full gap-6">
             <ProjectCard
-              title="marcam"
-              description="A feature rich, minimalistic and open source LeetCode bookmarker."
-              gradient="from-[#61f4de] to-[#6e78ff]"
+              title="Upsolve Leetcode Contest"
+              description="A website to upsolve leetcode contests."
+              gradient="from-[#f3f520] to-[#59d102]"
               tech={[
-                'NextJS 13',
-                'TypeScript',
-                'React Query',
-                'Postgres',
-                'TailwindCSS',
-                'shadcn/ui'
+                'HTML',
+                'CSS',
+                'Javascript',
+                'AI Prompting',
+                'Cloudflare Pages'
               ]}
-              githubLink="https://github.com/PritishMishraa/marcam"
-              hostedLink="https://marcam.vercel.app/"
+              githubLink="https://github.com/PritishMishraa/leetcode-upsolve"
+              hostedLink="https://upsolve.pritish.in/"
             />
             <ProjectCard
               title="GATE CSE Tracker"
