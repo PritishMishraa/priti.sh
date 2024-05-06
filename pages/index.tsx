@@ -36,7 +36,7 @@ export default function Home() {
           </div>
 
           <h3 className="mb-6 text-2xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
-            Featured Projects
+            Featured Projects:
           </h3>
           <div className="flex flex-col w-full gap-6">
             <ProjectCard
