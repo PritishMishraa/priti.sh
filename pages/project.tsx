@@ -20,6 +20,46 @@ export default function Projects() {
         </p>
         <div className="mb-10 flex flex-col w-full gap-8">
           <ProjectCard
+            title="smoll.host"
+            description="A simple web hosting service that allows you to deploy HTML projects with a simple drag and drop."
+            gradient="from-[#FF512F] to-[#DD2476]"
+            tech={[
+              'NextJS 14',
+              'AWS S3',
+              'File Upload',
+              'Drag and Drop',
+              'NextUI',
+              'TypeScript',
+            ]}
+            githubLink="https://github.com/PritishMishraa/smoll-host"
+            hostedLink="https://smoll-host.vercel.app/"
+          />
+          <ProjectCard
+            title="Streakks"
+            description="A task management app with GitHub commit heat map like calendar to show your consistency."
+            gradient="from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB]"
+            tech={[
+              'NextJS 14',
+              'Zustand',
+              'NextUI',
+              'TypeScript',
+            ]}
+            githubLink="https://github.com/PritishMishraa/streaks"
+            hostedLink="https://streakks.vercel.app/"
+          />
+          <ProjectCard
+            title="SQL Editor"
+            description="A simple SQL editor for quickly running SQL queries on your local SQLite databases."
+            gradient="from-[#FF512F] to-[#F09819]"
+            tech={[
+              'Golang',
+              'ReactJS',
+              'TailwindCSS',
+            ]}
+            githubLink="https://github.com/PritishMishraa/sql-editor"
+            hostedLink="https://github.com/PritishMishraa/sql-editor"
+          />
+          <ProjectCard
             title="Upsolve Leetcode Contest"
             description="A website to upsolve leetcode contests."
             gradient="from-[#f3f520] to-[#59d102]"
@@ -133,12 +173,12 @@ export default function Projects() {
             hostedLink="https://github.com/PritishMishraa/realtime-comment-section"
           />
           <ProjectCard
-            title="Custom Barcode - ReactMini I"
-            description="A react PWA that generates custom barcodes that can be downloaded in PNG format."
-            gradient="from-[#ffcf67] to-[#d3321d]"
+            title="Temperature Control - ReactMini III"
+            description="My first attempt at progressive web apps"
+            gradient="from-[#08203e] to-[#557c93]"
             tech={['ReactJS', 'PWA', 'CSS']}
-            githubLink="https://github.com/PritishMishraa/react-barcode-app"
-            hostedLink="https://react-barcode-app.vercel.app/"
+            githubLink="https://github.com/PritishMishraa/react-pwa-temp-controls"
+            hostedLink="https://react-pwa-temp-controls.vercel.app/"
           />
           <ProjectCard
             title="Google Maps - ReactMini II"
@@ -149,12 +189,12 @@ export default function Projects() {
             hostedLink="https://react-google-map-black.vercel.app/"
           />
           <ProjectCard
-            title="Temperature Control - ReactMini III"
-            description="My first attempt at progressive web apps"
-            gradient="from-[#08203e] to-[#557c93]"
+            title="Custom Barcode - ReactMini I"
+            description="A react PWA that generates custom barcodes that can be downloaded in PNG format."
+            gradient="from-[#ffcf67] to-[#d3321d]"
             tech={['ReactJS', 'PWA', 'CSS']}
-            githubLink="https://github.com/PritishMishraa/react-pwa-temp-controls"
-            hostedLink="https://react-pwa-temp-controls.vercel.app/"
+            githubLink="https://github.com/PritishMishraa/react-barcode-app"
+            hostedLink="https://react-barcode-app.vercel.app/"
           />
         </div>
         <div className='grid w-full grid-cols-3 md:grid-cols-4 md:gap-y-8 gap-y-4'>

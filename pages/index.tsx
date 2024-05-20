@@ -40,32 +40,32 @@ export default function Home() {
           </h3>
           <div className="flex flex-col w-full gap-6">
             <ProjectCard
-              title="Upsolve Leetcode Contest"
-              description="A website to upsolve leetcode contests."
-              gradient="from-[#f3f520] to-[#59d102]"
+              title="smoll.host"
+              description="A simple web hosting service that allows you to deploy HTML projects with a simple drag and drop."
+              gradient="from-[#FF512F] to-[#DD2476]"
               tech={[
-                'HTML',
-                'CSS',
-                'Javascript',
-                'AI Prompting',
-                'Cloudflare Pages'
+                'NextJS 14',
+                'AWS S3',
+                'File Upload',
+                'Drag and Drop',
+                'NextUI',
+                'TypeScript',
               ]}
-              githubLink="https://github.com/PritishMishraa/leetcode-upsolve"
-              hostedLink="https://upsolve.pritish.in/"
+              githubLink="https://github.com/PritishMishraa/smoll-host"
+              hostedLink="https://smoll-host.vercel.app/"
             />
             <ProjectCard
-              title="GATE CSE Tracker"
-              description="A platform that helps GATE CSE aspirants to track their progress and streamline their preparation from free YouTube resources. Currently cruising at 10K page views."
-              gradient="from-[#696eff] to-[#f8acff]"
+              title="Streakks"
+              description="A task management app with GitHub commit heat map like calendar to show your consistency."
+              gradient="from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB]"
               tech={[
-                'NextJS 13',
+                'NextJS 14',
+                'Zustand',
+                'NextUI',
                 'TypeScript',
-                'TailwindCSS',
-                'APIs',
-                'Scraping'
               ]}
-              githubLink="https://github.com/PritishMishraa/gatecsetracker"
-              hostedLink="https://gatecsetracker.vercel.app/"
+              githubLink="https://github.com/PritishMishraa/streaks"
+              hostedLink="https://streakks.vercel.app/"
             />
           </div>
 
