@@ -78,7 +78,7 @@ export default function Container(props) {
           <div className='flex gap-4 items-center'>
             <div className='flex gap-4'>
               <div>
-                <a href="https://flowcv.com/resume/385druucnq" target="_blank" rel="noopener noreferrer">
+                <a href="https://drive.google.com/file/d/1cliyXmkpRAklJdEBMfvGqF5nNUwbR4Uw/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className='w-5 h-5'
@@ -88,6 +88,7 @@ export default function Container(props) {
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round">
+                    <title> Resume - Pritish Mishra </title>
                     <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" /><path d="M14 2v4a2 2 0 0 0 2 2h4" /><path d="M10 9H8" /><path d="M16 13H8" /><path d="M16 17H8" />
                   </svg>
                 </a>
