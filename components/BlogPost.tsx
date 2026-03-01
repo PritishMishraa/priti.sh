@@ -1,33 +1,21 @@
 import Link from 'next/link';
-import useSWR from 'swr';
-
-import fetcher from 'lib/fetcher';
-import { Views } from 'lib/types';
+import { format, parseISO } from 'date-fns';
 import type { Blog } from '.contentlayer/generated';
 
 export default function BlogPost({
   title,
-  summary,
   slug,
-  readingTime
-}: Pick<Blog, 'title' | 'summary' | 'slug' | 'readingTime'>) {
-  const { data } = useSWR<Views>(`/api/views/${slug}`, fetcher);
-  const views = data?.views;
-
+  publishedAt,
+}: Pick<Blog, 'title' | 'slug' | 'publishedAt'>) {
   return (
-    <Link href={`/blog/${slug}`}>
-      <div className="w-full mb-8">
-        <div className="flex flex-col justify-between md:flex-row">
-          <h4 className="w-full mb-2 text-lg font-medium text-gray-900 md:text-xl dark:text-gray-100">
-            {title}
-          </h4>
-          <p className="w-full mb-4 text-left text-gray-500 md:text-right md:mb-0">
-            {readingTime.text}
-            {` • `}
-            {`${views ? new Number(views).toLocaleString() : '–––'} views`}
-          </p>
-        </div>
-        <p className="text-gray-600 dark:text-gray-400">{summary}</p>
+    <Link href={`/blog/${slug}`} className="group block py-4 -mx-4 px-4 rounded-lg transition-colors duration-200 hover:bg-stone-100 dark:hover:bg-stone-900/50">
+      <div className="flex items-baseline justify-between gap-4">
+        <h3 className="text-stone-900 dark:text-stone-100 group-hover:text-stone-700 dark:group-hover:text-stone-300 transition-colors duration-200">
+          {title}
+        </h3>
+        <time className="text-sm text-stone-500 dark:text-stone-500 shrink-0">
+          {format(parseISO(publishedAt), 'MMM yyyy')}
+        </time>
       </div>
     </Link>
   );

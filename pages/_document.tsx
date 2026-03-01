@@ -30,7 +30,7 @@ export default function Document() {
         />
         <script src="https://beamanalytics.b-cdn.net/beam.min.js" data-token="8f32dfb2-00bc-4a24-8d11-36e1b5eb9fd3" async></script>
       </Head>
-      <body className="text-white bg-white dark:bg-black dark:text-black">
+      <body className="bg-stone-50 text-stone-900 dark:bg-dark-bg dark:text-stone-100">
         <Main />
         <NextScript />
       </body>

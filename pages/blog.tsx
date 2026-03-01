@@ -17,49 +17,45 @@ export default function Blog({
   return (
     <Container
       title="Blog – Pritish Mishra"
-      description="Thoughts on internet."
+      description="Thoughts on the internet."
     >
       <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-16">
-        <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
+        <h1 className="mb-12 text-3xl font-semibold tracking-tight text-stone-900 md:text-4xl dark:text-stone-100">
           Blog
         </h1>
-        <p className="mb-4 text-gray-600 dark:text-gray-400">
-          {`I'm just starting out on my writing journey, focusing on topics like technology and careers. So far, I'm excited to share that I've written ${posts.length} articles on my blog. Feel free to use the search below to filter articles by title.`}
-        </p>
-        <div className="relative w-full mb-4">
+        <div className="relative w-full mb-12">
           <input
             aria-label="Search articles"
             type="text"
             onChange={(e) => setSearchValue(e.target.value)}
-            placeholder="Search articles"
-            className="block w-full px-4 py-2 text-gray-900 bg-white border border-gray-200 rounded-md dark:border-gray-900 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-gray-100"
+            placeholder="Search articles..."
+            className="block w-full px-4 py-3 text-stone-900 bg-stone-100 border-0 rounded-lg focus:ring-2 focus:ring-stone-300 dark:bg-stone-900 dark:text-stone-100 dark:focus:ring-stone-700 placeholder:text-stone-400 dark:placeholder:text-stone-500"
           />
           <svg
-            className="absolute w-5 h-5 text-gray-400 right-3 top-3 dark:text-gray-300"
+            className="absolute w-5 h-5 text-stone-400 right-4 top-3.5"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
+            strokeWidth={1.5}
           >
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
-              strokeWidth={2}
               d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
             />
           </svg>
         </div>
-        <h3 className="mt-8 mb-4 text-2xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
-          All Posts
-        </h3>
         {!filteredBlogPosts.length && (
-          <p className="mb-4 text-gray-600 dark:text-gray-400">
+          <p className="text-stone-500 dark:text-stone-400">
             No posts found.
           </p>
         )}
-        {filteredBlogPosts.map((post) => (
-          <BlogPost key={post.title} {...post} />
-        ))}
+        <div className="flex flex-col w-full">
+          {filteredBlogPosts.map((post) => (
+            <BlogPost key={post.title} {...post} />
+          ))}
+        </div>
       </div>
     </Container>
   );
@@ -67,7 +63,7 @@ export default function Blog({
 
 export function getStaticProps() {
   const posts = allBlogs
-    .map((post) => pick(post, ['slug', 'title', 'summary', 'publishedAt', 'readingTime']))
+    .map((post) => pick(post, ['slug', 'title', 'summary', 'publishedAt']))
     .sort(
       (a, b) =>
         Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt))

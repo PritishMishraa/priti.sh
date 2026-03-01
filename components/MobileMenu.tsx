@@ -4,17 +4,6 @@ import { useState, useEffect } from 'react';
 import styles from 'styles/mobile-menu.module.css';
 import useDelayedRender from 'lib/use-delayed-render';
 
-const ExternalLink = ({ href, children }) => (
-  <a
-    className="flex w-auto pb-4"
-    target="_blank"
-    rel="noopener noreferrer"
-    href={href}
-  >
-    {children}
-  </a>
-);
-
 export default function MobileMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { mounted: isMenuMounted, rendered: isMenuRendered } = useDelayedRender(
@@ -56,12 +45,12 @@ export default function MobileMenu() {
         <ul
           className={cn(
             styles.menu,
-            'flex flex-col absolute bg-gray-100 dark:bg-gray-900',
+            'flex flex-col absolute bg-stone-100 dark:bg-neutral-900',
             isMenuRendered && styles.menuRendered
           )}
         >
           <li
-            className="text-sm font-semibold text-gray-900 border-b border-gray-300 dark:border-gray-700 dark:text-gray-100"
+            className="text-sm text-stone-900 border-b border-stone-200 dark:border-stone-800 dark:text-stone-100"
             style={{ transitionDelay: '150ms' }}
           >
             <Link href="/" className="flex w-auto pb-4">
@@ -69,7 +58,7 @@ export default function MobileMenu() {
             </Link>
           </li>
           <li
-            className="text-sm font-semibold text-gray-900 border-b border-gray-300 dark:border-gray-700 dark:text-gray-100"
+            className="text-sm text-stone-900 border-b border-stone-200 dark:border-stone-800 dark:text-stone-100"
             style={{ transitionDelay: '175ms' }}
           >
             <Link href="/project" className="flex w-auto pb-4">
@@ -77,27 +66,11 @@ export default function MobileMenu() {
             </Link>
           </li>
           <li
-            className="text-sm font-semibold text-gray-900 border-b border-gray-300 dark:border-gray-700 dark:text-gray-100"
+            className="text-sm text-stone-900 border-b border-stone-200 dark:border-stone-800 dark:text-stone-100"
             style={{ transitionDelay: '200ms' }}
           >
             <Link href="/blog" className="flex w-auto pb-4">
               Blog
-            </Link>
-          </li>
-          <li
-            className="text-sm font-semibold text-gray-900 border-b border-gray-300 dark:border-gray-700 dark:text-gray-100"
-            style={{ transitionDelay: '225ms' }}
-          >
-            <Link href="/leetcode" className="flex w-auto pb-4">
-              LeetCode
-            </Link>
-          </li>
-          <li
-            className="text-sm font-semibold text-gray-900 border-b border-gray-300 dark:border-gray-700 dark:text-gray-100"
-            style={{ transitionDelay: '250ms' }}
-          >
-            <Link href="/book" className="flex w-auto pb-4">
-              Books
             </Link>
           </li>
         </ul>
@@ -109,7 +82,7 @@ export default function MobileMenu() {
 function MenuIcon(props: JSX.IntrinsicElements['svg']) {
   return (
     <svg
-      className="absolute w-5 h-5 text-gray-900 dark:text-gray-100"
+      className="absolute w-5 h-5 text-stone-700 dark:text-stone-300"
       width="20"
       height="20"
       viewBox="0 0 20 20"
@@ -137,7 +110,7 @@ function MenuIcon(props: JSX.IntrinsicElements['svg']) {
 function CrossIcon(props: JSX.IntrinsicElements['svg']) {
   return (
     <svg
-      className="absolute w-5 h-5 text-gray-900 dark:text-gray-100"
+      className="absolute w-5 h-5 text-stone-700 dark:text-stone-300"
       viewBox="0 0 24 24"
       width="24"
       height="24"
