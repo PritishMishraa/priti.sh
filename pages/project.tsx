@@ -88,6 +88,18 @@ export default function Projects() {
             hostedLink="https://gatecsetracker.vercel.app/"
           />
           <ProjectCard
+            title="MiniYTM"
+            description="A Chrome extension that pops out a floating mini player for YouTube Music, staying in sync with your tab - controls, progress, artwork, and all."
+            gradient="from-[#ff0844] to-[#ffb199]"
+            tech={[
+              'React',
+              'WXT',
+              'Chrome Extension'
+            ]}
+            githubLink="https://github.com/PritishMishraa/youtube-music-mini-player"
+            hostedLink="https://miniytm.pages.dev/"
+          />
+          <ProjectCard
             title="marcam"
             description="A feature rich, minimalistic and open source LeetCode bookmarker."
             gradient="from-[#61f4de] to-[#6e78ff]"
