@@ -55,17 +55,18 @@ export default function Home() {
               hostedLink="https://smoll-host.vercel.app/"
             />
             <ProjectCard
-              title="Streakks"
-              description="A task management app with GitHub commit heat map like calendar to show your consistency."
-              gradient="from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB]"
+              title="GATE CSE Tracker"
+              description="A platform that helps GATE CSE aspirants to track their progress and streamline their preparation from free YouTube resources. Currently cruising at 10K page views."
+              gradient="from-[#696eff] to-[#f8acff]"
               tech={[
-                'NextJS 14',
-                'Zustand',
-                'NextUI',
+                'NextJS 13',
                 'TypeScript',
+                'TailwindCSS',
+                'APIs',
+                'Scraping'
               ]}
-              githubLink="https://github.com/PritishMishraa/streaks"
-              hostedLink="https://streakks.vercel.app/"
+              githubLink="https://github.com/PritishMishraa/gatecsetracker"
+              hostedLink="https://gatecsetracker.vercel.app/"
             />
           </div>
 
