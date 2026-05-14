@@ -68,6 +68,18 @@ export default function Home() {
               githubLink="https://github.com/PritishMishraa/gatecsetracker"
               hostedLink="https://gatecsetracker.vercel.app/"
             />
+            <ProjectCard
+              title="MiniYTM"
+              description="The missing mini player for YouTube Music."
+              gradient="from-[#ff0844] to-[#ffb199]"
+              tech={[
+                'React',
+                'WXT',
+                'Chrome Extension'
+              ]}
+              githubLink="https://github.com/PritishMishraa/youtube-music-mini-player"
+              hostedLink="https://miniytm.pages.dev/"
+            />
           </div>
 
           <Link
